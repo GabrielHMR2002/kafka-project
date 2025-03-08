@@ -26,3 +26,13 @@ cd app
 docker-compose up -d
 ![Captura de tela 2025-03-07 233354](https://github.com/user-attachments/assets/31819c91-7c80-4e7d-a485-ed8fd619b16a)
 
+What type of components do we have in our apache kafka
+We have the producers, message , broker , kafka cluster, consukmer.
+
+The producers will be microservices, and the consumers will also be microservices.
+
+A producer is a service responsible for generating data. This data is referred to as a message. So, we produce messages, and the Kafka broker acts as a storage system for these messages. However, Kafka is not a traditional database—it only behaves like one. Instead, it uses a special mechanism to store messages in a binary format.
+
+A broker is essentially a server, but in Kafka, it plays a more significant role. Kafka brokers can communicate with each other and share information about the cluster. The Kafka cluster acts as a logical abstraction over multiple brokers, managing the distribution of data and ensuring fault tolerance.
+
+The producer does not know about the consumer, and the consumer does not know about the producer. However, the producer can generate and send data, while the consumer can receive and process that data.
