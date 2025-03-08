@@ -20,7 +20,9 @@ So, microservice A acts as a producer, and microservice B acts as a consumer. Th
 Zookeeper is the manager of our Apache Kafka brokers. It acts as a central coordinator that manages broker information, topic metadata, and more. Zookeeper helps us interact with Apache Kafka by notifying it when brokers go down, when topics are created or removed, and by storing essential metadata for our topics.
 
 --------------------------------------
-cd ()
+cd project
+cd app
+
 docker-compose up -d
 ![Captura de tela 2025-03-07 233354](https://github.com/user-attachments/assets/31819c91-7c80-4e7d-a485-ed8fd619b16a)
 
