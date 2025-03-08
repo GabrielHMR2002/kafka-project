@@ -33,6 +33,9 @@ The producers will be microservices, and the consumers will also be microservice
 
 A producer is a service responsible for generating data. This data is referred to as a message. So, we produce messages, and the Kafka broker acts as a storage system for these messages. However, Kafka is not a traditional database—it only behaves like one. Instead, it uses a special mechanism to store messages in a binary format.
 
+![image](https://github.com/user-attachments/assets/f3ef3293-d574-4dc4-ba5a-55c2bc9e631c)
+
+
 A broker is essentially a server, but in Kafka, it plays a more significant role. Kafka brokers can communicate with each other and share information about the cluster. The Kafka cluster acts as a logical abstraction over multiple brokers, managing the distribution of data and ensuring fault tolerance.
 
 The producer does not know about the consumer, and the consumer does not know about the producer. However, the producer can generate and send data, while the consumer can receive and process that data.
