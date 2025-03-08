@@ -39,3 +39,11 @@ A producer is a service responsible for generating data. This data is referred t
 A broker is essentially a server, but in Kafka, it plays a more significant role. Kafka brokers can communicate with each other and share information about the cluster. The Kafka cluster acts as a logical abstraction over multiple brokers, managing the distribution of data and ensuring fault tolerance.
 
 The producer does not know about the consumer, and the consumer does not know about the producer. However, the producer can generate and send data, while the consumer can receive and process that data.
+
+
+What is a Topic?
+
+Before producing data, you need to create a topic.
+Topic is a logical container of data streams.
+Topic is a stream of data that acts as a logical isolator over partitions.
+Topics spread out between brokers. It means every broker contains only part of the topic. Topics are replicated across multiple brokers for fault tolerance and scalability.
